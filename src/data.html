@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data | Research Paper Toolbox</title>
+  <link rel="stylesheet" href="../docs/style.css">
+</head>
+<body>
+  <header>
+    <h1>Data</h1>
+    <nav class="static-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Topic</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="data.html" aria-current="page">Data</a></li>
+        <li><a href="#">References</a></li>
+        <li><a href="#">Style</a></li>
+        <li><a href="#">Layout</a></li>
+        <li><a href="#">Modality</a></li>
+        <li><a href="#">Professionalization</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <article>
+      <h2>How to organize and analyze research data</h2>
+
+      <aside>
+        <h3>For this lesson, you'll need:</h3>
+        <ul>
+          <li>Microsoft Excel</li>
+          <li>PASW (formerly SPSS) or a free trial</li>
+        </ul>
+        <p>You should already be familiar with:</p>
+        <ul>
+          <li>Excel basics</li>
+          <li>Descriptive and inferential statistics</li>
+          <li>Research design & variable identification</li>
+        </ul>
+      </aside>
+
+      <p>This lesson is intended for graduate or advanced undergraduate students working on original research. By the end, you’ll be able to:</p>
+      <ul>
+        <li>Format raw data in Excel for analysis</li>
+        <li>Run basic descriptive statistics in Excel</li>
+        <li>Prepare your dataset for use in PASW</li>
+      </ul>
+
+      <h3>Format data for analysis</h3>
+      <p>Open the Excel file <code>ToolBox_DataLesson.xls</code>. In the <strong>Raw_Dataset</strong> sheet:</p>
+      <ul>
+        <li>Ensure variable names are unique and intuitive</li>
+        <li>Rename variables starting with numbers (e.g., <code>4tutorial_types</code> to <code>tutorial_types</code>)</li>
+        <li>Use descriptive variable names (e.g., <code>use</code> to <code>perc_ease_of_use</code>)</li>
+      </ul>
+
+      <figure>
+        <img src="../illustrations/datalesson_fig3.png" alt="Formatted categorical values">
+        <figcaption>Tutorial type, gender, experience, and task values formatted as dichotomous variables.</figcaption>
+      </figure>
+
+      <p>Clean data by using consistent formatting. For example:</p>
+      <ul>
+        <li>Change "female" to "F" in gender</li>
+        <li>Break compound values (e.g. <code>Y/Y/N</code>) into multiple columns</li>
+        <li>Delete redundant columns</li>
+      </ul>
+
+      <figure>
+        <img src="../illustrations/datalesson_fig2.png" alt="Clean data format">
+        <figcaption>Values entered consistently for all variables.</figcaption>
+      </figure>
+
+      <p>Use 0/1 for categorical data to allow better testing in PASW.</p>
+
+      <aside>
+        <p><strong>Dichotomous variables</strong> help isolate characteristics for statistical testing.</p>
+      </aside>
+
+      <p>Copy the data to <strong>Sheet2</strong> and rename it <strong>Formatted_Data</strong>. Use <em>Insert &gt; Columns</em> to expand categorical columns as needed and apply 0/1 encoding. Use <em>Edit &gt; Replace</em> to make substitutions.</p>
+
+      <figure>
+        <img src="../illustrations/datalesson_fig3 (1).png" alt="Expanded dataset format">
+        <figcaption>Each category encoded into new columns for flexibility.</figcaption>
+      </figure>
+
+      <h3>Run descriptive statistics</h3>
+      <aside>
+        <p>Descriptive stats help identify new patterns and suggest new questions.</p>
+      </aside>
+
+      <ul>
+        <li>Check that <strong>perc_enjoy</strong>, <strong>perc_usefulness</strong>, and <strong>perc_ease_of_use</strong> are in adjacent columns</li>
+        <li>Enable the <strong>Analysis ToolPak</strong> under <em>Tools &gt; Add-Ins</em></li>
+        <li>Run <strong>Descriptive Statistics</strong> from <em>Tools &gt; Data Analysis</em></li>
+        <li>Set input range, uncheck labels, and enable summary statistics</li>
+      </ul>
+
+      <figure>
+        <img src="../illustrations/datalesson_fig4.png" alt="Descriptive output format">
+        <figcaption>Descriptive stats output in a clean new worksheet.</figcaption>
+      </figure>
+
+      <h3>Run inferential statistics</h3>
+      <p>Open PASW and load the Excel file (Formatted_Data sheet). Go to <em>Analyze</em> to access statistical tools. Try to locate:</p>
+      <ul>
+        <li>Wilcoxon-Mann-Whitney test</li>
+        <li>Simple linear regression</li>
+        <li>Non-parametric correlation</li>
+      </ul>
+
+      <figure>
+        <img src="../illustrations/datalesson_fig5.png" alt="Statistical tools in PASW">
+        <figcaption>Explore categories in the Analyze menu for statistical tests.</figcaption>
+      </figure>
+
+      <aside>
+        <p>Consult UCLA’s <strong>Choosing the Correct Statistic</strong> to select appropriate tests based on your question and data type.</p>
+      </aside>
+
+      <p>To compare <strong>perc_usefulness</strong> across <strong>free_play</strong> types, use:</p>
+      <ol>
+        <li><strong>Analyze &gt; Nonparametric Tests &gt; K Independent Samples...</strong></li>
+        <li>Select <code>perc_usefulness</code> as the dependent variable</li>
+        <li>Select <code>free_play</code> as the grouping variable</li>
+        <li>Define range: Min = 0, Max = 1</li>
+      </ol>
+
+      <figure>
+        <img src="../illustrations/datalesson_fig6.png" alt="Kruskal-Wallis setup">
+        <figcaption>Define dependent and grouping variables before test.</figcaption>
+      </figure>
+
+      <p>Click OK to view results. Export the output (Word, Excel, or PDF) via <em>File &gt; Export</em>.</p>
+
+      <figure>
+        <img src="../illustrations/datalesson_fig7.png" alt="Exported results">
+        <figcaption>Results exported for documentation or publication.</figcaption>
+      </figure>
+
+      <h3>Test your knowledge</h3>
+      <p>Complete the short quiz provided to confirm your understanding of formatting and analyzing datasets.</p>
+    </article>
+  </main>
+  <footer>
+    <p>&copy; 2025 COM 421 – Research Paper Toolbox</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,93 @@
+body {
+  font-family: system-ui, sans-serif;
+  background: #f7f7f7;
+  margin: 0;
+  color: #222;
+}
+
+header, footer {
+  background: #003366;
+  color: white;
+  padding: 1rem;
+}
+
+nav.static-nav {
+  position: sticky;
+  top: 0;
+  background: #003366;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  padding: 1rem;
+  background: white;
+  max-width: 1000px;
+  margin: auto;
+}
+
+article {
+  line-height: 1.6;
+}
+
+aside {
+  background: #eef4ff;
+  padding: 1rem;
+  border-left: 4px solid #337ab7;
+  margin: 2rem 0;
+}
+
+aside h3, aside h4 {
+  margin-top: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin: 1rem 0;
+  display: block;
+}
+
+figure {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+figcaption {
+  font-size: 0.9rem;
+  color: #444;
+  margin-top: 0.5rem;
+}
+
+ul, ol {
+  padding-left: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+ul li, ol li {
+  margin-bottom: 0.5rem;
+}
+
+h1, h2, h3 {
+  color: #003366;
+}
+
+code {
+  background-color: #eee;
+  padding: 0.2rem 0.4rem;
+  font-family: monospace;
+  border-radius: 4px;
+}
